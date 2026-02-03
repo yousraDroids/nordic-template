@@ -17,7 +17,7 @@ function Contact() {
           <p className="contact-role">Founder, Nordic Global Partners</p>
           <p className="contact-location">Copenhagen / Dubai</p>
           <a
-            href="mailto:contact@nordicglobalpartners.com"
+            href="mailto:ahmad@nordicglobalpartners.com"
             className="contact-email"
           >
             ahmad@nordicglobalpartners.com
