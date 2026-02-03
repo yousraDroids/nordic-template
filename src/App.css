@@ -1,0 +1,152 @@
+.app {
+  width: 100%;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--padding);
+}
+
+/* ============================================
+   HERO - Full viewport, commanding presence
+   ============================================ */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 120px 0;
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin-bottom: 32px;
+}
+
+.hero-tagline {
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  font-weight: 400;
+  color: var(--color-text-secondary);
+  margin-bottom: 24px;
+  max-width: 700px;
+}
+
+.hero-description {
+  font-size: 1.125rem;
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+  max-width: 600px;
+}
+
+/* ============================================
+   SECTIONS - Full width with breathing room
+   ============================================ */
+.section {
+  padding: 160px 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.section-title {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  margin-bottom: 48px;
+  color: var(--color-text);
+}
+
+.section-text {
+  font-size: 1.375rem;
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+  max-width: 720px;
+}
+
+/* ============================================
+   LISTS - Clean, spacious
+   ============================================ */
+.section-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-list li {
+  font-size: 1.25rem;
+  color: var(--color-text-secondary);
+  padding: 28px 0;
+  border-bottom: 1px solid var(--color-border);
+  line-height: 1.6;
+}
+
+.section-list li:last-child {
+  border-bottom: none;
+}
+
+/* ============================================
+   CONTACT
+   ============================================ */
+.contact {
+  padding-bottom: 200px;
+}
+
+.contact-name {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.contact-role {
+  font-size: 1.125rem;
+  color: var(--color-text-secondary);
+}
+
+.contact-location {
+  font-size: 1.125rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 40px;
+}
+
+.contact-email {
+  display: inline-block;
+  font-size: 1.25rem;
+  color: var(--color-text);
+  text-decoration: none;
+  padding-bottom: 4px;
+  border-bottom: 2px solid var(--color-text);
+  transition: opacity 0.3s ease;
+}
+
+.contact-email:hover {
+  opacity: 0.5;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+  .hero {
+    min-height: auto;
+    padding: 120px 0 80px;
+  }
+
+  .section {
+    padding: 100px 0;
+  }
+
+  .section-text {
+    font-size: 1.125rem;
+  }
+
+  .section-list li {
+    font-size: 1.0625rem;
+    padding: 20px 0;
+  }
+
+  .contact {
+    padding-bottom: 120px;
+  }
+}
